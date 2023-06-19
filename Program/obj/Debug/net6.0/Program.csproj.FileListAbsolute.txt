@@ -1,0 +1,15 @@
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\bin\Debug\net6.0\Program.exe
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\bin\Debug\net6.0\Program.deps.json
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\bin\Debug\net6.0\Program.runtimeconfig.json
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\bin\Debug\net6.0\Program.dll
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\bin\Debug\net6.0\Program.pdb
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.csproj.AssemblyReference.cache
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.AssemblyInfoInputs.cache
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.AssemblyInfo.cs
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.csproj.CoreCompileInputs.cache
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.dll
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\refint\Program.dll
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.pdb
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\Program.genruntimeconfig.cache
+C:\Users\Nazariel\Desktop\Geek Brains\Final_Homework_GB\Program\obj\Debug\net6.0\ref\Program.dll
