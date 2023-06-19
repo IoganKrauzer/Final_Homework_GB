@@ -76,7 +76,7 @@ int j = 0;
 ```
 for (int i = 0; i < arr.Length; i++)
 {
-... код
+... код ...
 }
 ```
 Создаем условие в цикле для нахождения элемента с количеством символов 3 иил меньше:
@@ -115,17 +115,37 @@ void PrintArray(string[] arr, char sep = '"')
 ```
 
 
-5. Прописывываем вызовы методов и их параметры, а также доофрмляем вывод результата в соответствие с условием задачи:
+5. Создаем метод для проверки, если в массиве не окажется ниодного элемента, соответствующего условию задачи:
+```
+bool IsElementExistInArray(int size)
+{
+    return size > 0 ? true : false;
+}
+```
+
+
+6. Прописывываем вызовы методов и их параметры, а также доофрмляем вывод результата в соответствии с условием задачи:
 ```
 Console.WriteLine("Массив строк: ");
-PrintArray(array);
- Console.WriteLine("\n");
-string [] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountWordsWithThreeOrLessCharsInArray(array), array);
-Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
-PrintArray(newArray);
- Console.WriteLine("\n");
-PrintArray(array);
-Console.Write(" → ");
-PrintArray(newArray);
-Console.WriteLine("\n");;
+
+if (IsElementExistInArray(CountWordsWithThreeOrLessCharsInArray(array)))
+{
+    PrintArray(array);
+    Console.WriteLine("\n");
+    string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountWordsWithThreeOrLessCharsInArray(array), array);
+    Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
+    PrintArray(newArray);
+    Console.WriteLine("\n");
+    PrintArray(array);
+    Console.Write("  →  ");
+    PrintArray(newArray);
+    Console.WriteLine("\n"); ;
+}
+else
+{
+    Console.WriteLine("В массиве нет ниодного элемента, удовлетворяющего условие задачи: ");
+    PrintArray(array);
+    Console.Write("  →  ");
+    Console.WriteLine("[]\n ");
+}
 ```

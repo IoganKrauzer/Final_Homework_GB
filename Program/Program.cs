@@ -13,16 +13,27 @@ Console.Clear();
 
 string[] array = new string[7] { "Hello", "2", "world", "1563", "321", "-2", "Russia" };
 Console.WriteLine("Массив строк: ");
-PrintArray(array);
-Console.WriteLine("\n");
-string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountWordsWithThreeOrLessCharsInArray(array), array);
-Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
-PrintArray(newArray);
-Console.WriteLine("\n");
-PrintArray(array);
-Console.Write(" → ");
-PrintArray(newArray);
-Console.WriteLine("\n"); ;
+
+if (IsElementExistInArray(CountWordsWithThreeOrLessCharsInArray(array)))
+{
+    PrintArray(array);
+    Console.WriteLine("\n");
+    string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountWordsWithThreeOrLessCharsInArray(array), array);
+    Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
+    PrintArray(newArray);
+    Console.WriteLine("\n");
+    PrintArray(array);
+    Console.Write("  →  ");
+    PrintArray(newArray);
+    Console.WriteLine("\n"); ;
+}
+else
+{
+    Console.WriteLine("В массиве нет ниодного элемента, удовлетворяющего условие задачи: ");
+    PrintArray(array);
+    Console.Write("  →  ");
+    Console.WriteLine("[]\n ");
+}
 
 
 
@@ -59,7 +70,13 @@ void PrintArray(string[] arr, char sep = '"')
     Console.Write("[");
     for (int i = 0; i < arr.Length - 1; i++)
     {
-        Console.Write($"{sep}{arr[i]}{sep}," + "  ");
+        Console.Write($"{sep}{arr[i]}{sep}," + " ");
     }
     Console.Write($"{sep}{arr[arr.Length - 1]}{sep}]");
+}
+
+
+bool IsElementExistInArray(int size)
+{
+    return size > 0 ? true : false;
 }
