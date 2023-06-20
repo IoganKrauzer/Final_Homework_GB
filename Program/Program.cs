@@ -14,11 +14,11 @@ Console.Clear();
 string[] array = new string[7] { "Hello", "2", "world", "1563", "321", "-2", "Russia" };
 Console.WriteLine("Массив строк: ");
 
-if (IsElementExistInArray(CountWordsWithThreeOrLessCharsInArray(array)))
+if (IsElementExistInArray(CountElemWithThreeOrLessCharsInArray(array)))
 {
     PrintArray(array);
     Console.WriteLine("\n");
-    string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountWordsWithThreeOrLessCharsInArray(array), array);
+    string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountElemWithThreeOrLessCharsInArray(array), array);
     Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
     PrintArray(newArray);
     Console.WriteLine("\n");
@@ -39,7 +39,7 @@ else
 
 
 
-int CountWordsWithThreeOrLessCharsInArray(string[] arr, int count = 0)
+int CountElemWithThreeOrLessCharsInArray(string[] arr, int count = 0)
 {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -78,5 +78,6 @@ void PrintArray(string[] arr, char sep = '"')
 
 bool IsElementExistInArray(int size)
 {
-    return size > 0 ? true : false;
+    return size > 0;
 }
+

@@ -27,7 +27,7 @@ string[] array = new string[7] {"Hello", "2", "world", "1563", "321", "-2", "Rus
 
 2. Создаем метод для поиска в массиве всех элементов с размером 3 или меньше символов:
 ```
-int CountWordsWithThreeOrLessCharsInArray (string [] arr, int count = 0)
+int CountElemWithThreeOrLessCharsInArray (string [] arr, int count = 0)
 {
 for (int i = 0; i < arr.Length; i++)
 {
@@ -119,7 +119,7 @@ void PrintArray(string[] arr, char sep = '"')
 ```
 bool IsElementExistInArray(int size)
 {
-    return size > 0 ? true : false;
+    return size > 0;
 }
 ```
 
@@ -128,11 +128,11 @@ bool IsElementExistInArray(int size)
 ```
 Console.WriteLine("Массив строк: ");
 
-if (IsElementExistInArray(CountWordsWithThreeOrLessCharsInArray(array)))
+if (IsElementExistInArray(CountElemWithThreeOrLessCharsInArray(array)))
 {
     PrintArray(array);
     Console.WriteLine("\n");
-    string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountWordsWithThreeOrLessCharsInArray(array), array);
+    string[] newArray = CreateAndFillArrayWithThreeOrLessCharElem(CountElemWithThreeOrLessCharsInArray(array), array);
     Console.WriteLine("Новый массив из строк, длина которых меньше, либо равна 3 символам: ");
     PrintArray(newArray);
     Console.WriteLine("\n");
